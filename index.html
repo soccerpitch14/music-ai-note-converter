@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music AI Note Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Music AI Note Converter</h1>
+    <p class="subtitle">Convert notes between instruments instantly</p>
+
+    <div class="card">
+      <label>From Instrument</label>
+      <select id="fromInstrument">
+        <option>Guitar</option>
+        <option>Piano</option>
+        <option>Violin</option>
+        <option>Flute</option>
+      </select>
+
+      <label>To Instrument</label>
+      <select id="toInstrument">
+        <option>Piano</option>
+        <option>Guitar</option>
+        <option>Violin</option>
+        <option>Flute</option>
+      </select>
+
+      <label>Enter Note</label>
+      <input id="noteInput" placeholder="Example: C4, A#3, G5">
+
+      <button onclick="convertNote()">Convert</button>
+
+      <div class="result" id="result">—</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
